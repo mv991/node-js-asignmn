@@ -4,6 +4,7 @@ I have developed CRUD REST apis and handeled all edge cases.
 Tested with jest and sueprtest.
 Documented apis using swagger.
 Included image upload with cloudinary.
+Used mongo db atlas to store material data.
 
 
 Test Commmand: npm test
