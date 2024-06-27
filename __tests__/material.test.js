@@ -81,7 +81,7 @@ describe('PUT material/:id',() => {
                await supertest(app).put(`/materials/${id}`).expect(404)
             })
       it('should update a resource successfully', async () => {
-        const updateMaterial = { name: 'Updated Name' };
+        const updateMaterial = { name: 'Updated Name',imageUrl:"https://res.cloudinary.com/dft1xk7ug/image/upload/v1719507547/node.js-assignment/roykkzwnjtw1krvaunmw.png", technology:"ADM",pricePerGram:0,applicationTypes:["AGA","HFF"],colors:["RED"]};
 
         const mockUpdateById = jest.spyOn(Material, 'findByIdAndUpdate').mockImplementation((id, updateData, options) => {
             return Promise.resolve(updateMaterial); 
